@@ -6,7 +6,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
-import profilePic from '../assets/harsh.jpg';
+import profilePic from '../assets/Harsh.jpg';
 import Connect from './connect';
 
 export default function Home() {
