@@ -27,7 +27,7 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <motion.section
-      className="bg-blue-300 w-full"
+      className="bg-yellow-300 w-full"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -56,7 +56,7 @@ export default function About() {
             <li><strong>Graduation (B.Tech):</strong> 78.5%</li>
           </ul>
         </div>
-
+        <hr className="my-10 border-gray-300" />
         <h3 className="text-3xl pt-16 font-bold mb-10 text-center text-gray-800 dark:text-brown-900">🚀 Technical Skills</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {[
@@ -68,6 +68,11 @@ export default function About() {
             { name: 'MongoDB', level: 80, Icon: FaDatabase },
             { name: 'Git & GitHub', level: 90, Icon: FaGithub },
             { name: 'REST APIs', level: 87, Icon: FaServer },
+            { name: 'MySQL / SQL', level: 58, Icon: FaDatabase },
+            { name: 'Redux & JSON APIs', level: 40, Icon: FaServer },
+            { name: 'Git & GitHub', level: 90, Icon: FaGithub },
+            { name: 'Postman & API Testing', level: 84, Icon: FaServer },
+            { name: 'VS Code / Cursor.AI', level: 87, Icon: FaLaptopCode },
           ].map((skill, i) => (
             <motion.div
               key={skill.name}
@@ -80,11 +85,11 @@ export default function About() {
                   <skill.Icon className="text-xl text-indigo-900 dark:text-indigo-900" />
                   <span className="font-medium text-gray-800 dark:text-black">{skill.name}</span>
                 </div>
-                <span className="text-sm text-gray-600 dark:text-gray-400">{skill.level}%</span>
+                <span className="text-sm text-gray-600 dark:text-gray-900">{skill.level}%</span>
               </div>
-              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+              <div className="w-full dark:bg-gray-100 rounded-full h-3">
                 <motion.div
-                  className="h-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"
+                  className="h-3 bg-gradient-to-r from-red-500 to-green-900 rounded-full"
                   style={{ width: `${skill.level}%` }}
                   initial={{ width: 0 }}
                   animate={{ width: `${skill.level}%` }}
@@ -94,12 +99,12 @@ export default function About() {
             </motion.div>
           ))}
         </div>
-
+          <hr className="my-10 border-gray-300" />
         {/* 💼 Work & Projects */}
-        <h3 className="text-2xl font-semibold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+        <h3 className="text-2xl font-semibold text-gray-900 mt-18 mb-4 flex items-center gap-2">
           <FaProjectDiagram /> Work & Projects
         </h3>
-        <ul className="grid sm:grid-cols-2 gap-3 text-gray-700 mb-6">
+        <ul className="grid sm:grid-cols-2 gap-3 text-gray-900 mb-6">
           <li className="flex items-center gap-2">
             <FaLaptopCode className="text-indigo-600" />
             Portfolio & dashboard websites
@@ -114,7 +119,7 @@ export default function About() {
           </li>
           <li className="flex items-center gap-2">
             <FaInstagram className="text-pink-500" />
-            Social media creatives (LuxTiar)
+            Social media creatives (attitudemotivationmoney)
           </li>
           <li className="flex items-center gap-2">
             <FaGraduationCap className="text-yellow-500" />
@@ -130,7 +135,7 @@ export default function About() {
         <h3 className="text-2xl font-semibold text-gray-900 mt-10 mb-4 flex items-center gap-2">
           🧠 Soft Skills & Strengths
         </h3>
-        <ul className="grid sm:grid-cols-2 gap-3 text-gray-700 mb-6">
+        <ul className="grid sm:grid-cols-2 gap-3 text-gray-900 mb-6">
           <li className="flex items-center gap-2">
             <FaComments className="text-blue-600" />
             Strong communicator & listener
@@ -157,6 +162,7 @@ export default function About() {
           </li>
         </ul>
 
+<hr className='my-10 border-gray-900' />
 
         <h3 className="text-2xl font-semibold text-gray-900 mt-10 mb-4 flex items-center gap-2">
           <FaRocket /> My Vision
@@ -175,7 +181,7 @@ export default function About() {
           </a>
         </div>
 
-        <h3 className="text-2xl font-semibold text-gray-900 mt-14 mb-4 flex items-center gap-2">
+        <h3 className="text-2xl font-semibold text-gray-900  mt-14 mb-4 flex items-center gap-2">
           <FaEnvelope /> Let’s Connect
         </h3>
         <p className="text-gray-800 text-lg">
