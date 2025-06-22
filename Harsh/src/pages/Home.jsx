@@ -52,7 +52,7 @@ export default function Home() {
                             <FaLaptopCode className="inline mr-2" /> View My Work
                         </a>
                         <a
-                            href="/Harsh_Resume.pdf"
+                            href="/HarshSrivastav_Resume.pdf"
                             download
                             className="border border-gray-800 hover:bg-gray-100 text-gray-800 font-semibold px-6 py-3 rounded-full text-center"
                         >

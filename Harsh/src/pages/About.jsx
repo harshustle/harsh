@@ -66,7 +66,6 @@ export default function About() {
             { name: 'React.js', level: 88, Icon: FaReact },
             { name: 'Node.js / Express', level: 85, Icon: FaNodeJs },
             { name: 'MongoDB', level: 80, Icon: FaDatabase },
-            { name: 'Git & GitHub', level: 90, Icon: FaGithub },
             { name: 'REST APIs', level: 87, Icon: FaServer },
             { name: 'MySQL / SQL', level: 58, Icon: FaDatabase },
             { name: 'Redux & JSON APIs', level: 40, Icon: FaServer },
