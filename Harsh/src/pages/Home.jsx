@@ -29,7 +29,7 @@ export default function Home() {
             </div>
 
             {/* Hero Section */}
-            <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-16 max-w-6xl mx-auto relative z-10">
+            <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-16 max-w-6xl mx-auto relative z-10 ps-36">
                 <div className="md:w-1/2 text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Harsh Srivastav 👋</h1>
                     <h2 className="text-xl text-gray-700 font-medium mb-6 block">
