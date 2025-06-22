@@ -27,7 +27,7 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <motion.section
-      className="bg-yellow-300 w-full"
+      className="bg-blue-300 w-full"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}

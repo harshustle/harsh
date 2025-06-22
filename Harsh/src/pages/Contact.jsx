@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import ContactButtons from '../components/ContactButtons'; // 🔗 Import here
 
 export default function Contact() {
   const form = useRef();
@@ -25,9 +26,12 @@ export default function Contact() {
       <div className="w-full max-w-2xl text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-900 mb-3">Let's Connect</h2>
         <div className="mx-auto w-24 h-1 bg-gray-800 rounded-full mb-6"></div>
-        <p className="text-gray-600">
+        <p className="text-gray-600 mb-6">
           Whether you have a question, want to collaborate or just say hi — I'm always open.
         </p>
+
+        {/* 💬 Add Buttons Here */}
+        <ContactButtons />
       </div>
 
       <form

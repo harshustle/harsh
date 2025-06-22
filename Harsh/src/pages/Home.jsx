@@ -23,7 +23,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
         >
             {/* Background shapes */}
-            <div className="absolute top-0 left-0 w-full h-full z-0">
+            <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
                 <div className="absolute w-52 h-52 sm:w-72 sm:h-72 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse top-4 left-4 sm:top-10 sm:left-10"></div>
                 <div className="absolute w-52 h-52 sm:w-72 sm:h-72 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse bottom-4 right-4 sm:bottom-10 sm:right-10"></div>
             </div>
