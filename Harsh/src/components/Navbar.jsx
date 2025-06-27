@@ -23,7 +23,7 @@ export default function Navbar() {
               {menuOpen ? <X /> : <Menu />}
             </button>
           </div>
-        </div>
+        </div> 
         {menuOpen && (
           <div className="md:hidden flex flex-col gap-4 py-2 text-gray-800 dark:text-black">
             <Link to="/" onClick={toggleMenu}>Home</Link>
